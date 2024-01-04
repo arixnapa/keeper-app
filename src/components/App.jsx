@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Note from "./Note";
 import Footer from "./Footer";
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       <CreateArea />
-      <Note />
+      <Note key={1} title="Note title" content="Note content" />
       <Footer />
     </div>
   );
